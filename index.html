@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de JavaScript</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .question { margin: 20px 0; }
+        #result { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Quiz de JavaScript</h1>
+
+    <div id="quiz">
+        <div class="question" data-id="1">
+            <p>1. O que é "hoisting" em JavaScript?</p>
+            <input type="radio" name="q1" value="a"> A. Elevações de variáveis e funções para o topo<br>
+            <input type="radio" name="q1" value="b"> B. O comportamento de execução de código no navegador<br>
+            <input type="radio" name="q1" value="c"> C. Um tipo de função assíncrona<br>
+        </div>
+        
+        <div class="question" data-id="2">
+            <p>2. Qual a diferença entre "==" e "===" em JavaScript?</p>
+            <input type="radio" name="q2" value="a"> A. "==" compara valores, enquanto "===" compara valores e tipos<br>
+            <input type="radio" name="q2" value="b"> B. Ambos comparam apenas os valores<br>
+            <input type="radio" name="q2" value="c"> C. Não existe diferença entre eles<br>
+        </div>
+        
+        <div class="question" data-id="3">
+            <p>3. Como podemos declarar uma variável em JavaScript?</p>
+            <input type="radio" name="q3" value="a"> A. let, var, const<br>
+            <input type="radio" name="q3" value="b"> B. apenas let<br>
+            <input type="radio" name="q3" value="c"> C. apenas var<br>
+        </div>
+        
+        <div class="question" data-id="4">
+            <p>4. O que é uma Promise em JavaScript?</p>
+            <input type="radio" name="q4" value="a"> A. Uma estrutura de repetição<br>
+            <input type="radio" name="q4" value="b"> B. Uma função que retorna um valor no futuro<br>
+            <input type="radio" name="q4" value="c"> C. Um tipo de objeto<br>
+        </div>
+        
+        <div class="question" data-id="5">
+            <p>5. O que é o "this" em JavaScript?</p>
+            <input type="radio" name="q5" value="a"> A. O objeto global<br>
+            <input type="radio" name="q5" value="b"> B. A função que está sendo executada<br>
+            <input type="radio" name="q5" value="c"> C. O contexto no qual a função é chamada<br>
+        </div>
+
+        <button onclick="submitQuiz()">Enviar Respostas</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
